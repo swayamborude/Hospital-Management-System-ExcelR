@@ -1,0 +1,157 @@
+/* Keep the general sidebar styles the same */
+.dashboard {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+    width: 250px; /* Sidebar width */
+    background-color: rgb(0, 0, 54);
+    color: white;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed; /* Fixed sidebar */
+    top: 0;
+    left: 0;
+}
+
+.main-content {
+    margin-left: 250px; /* Offset by sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto; /* Scrollable content */
+}
+
+.logo {
+    margin-bottom: 20px;
+    
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Makes the nav items take up available space */
+}
+
+.nav-item {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 22px;
+    padding: 15px 10px; /* Adjust padding for better alignment */
+    margin: 5px 0; /* Add some spacing between items */
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.nav-item:hover {
+    background-color: rgb(188, 20, 104);
+    transform: translateX(5px); /* Slide effect on hover */
+}
+
+.icon {
+    font-size: 17px; /* Adjust icon size */
+    color: white; /* Icon color */
+    margin-right: 10px; /* Add some space between icon and text */
+}
+
+/* Submenu dropdown styles */
+.submenu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.submenu.show {
+    display: flex; /* Show the submenu when activated */
+}
+
+.nav-subitem {
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-subitem:hover {
+    background-color: rgb(150, 10, 80);
+    transform: translateX(3px);
+}
+
+/* Profile Icon Styles */
+.profile-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.icon-text {
+    font-weight: bold;
+    color: #007bff; /* Change to your preferred text color */
+}
+
+.profile-info p {
+    margin: 0;
+    color: white;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.profile-menu ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.profile-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: black;
+}
+
+.profile-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main Content Header */
+.header {
+    background-color: rgb(0, 0, 54);
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.carousel-section {
+    padding: 20px;
+}

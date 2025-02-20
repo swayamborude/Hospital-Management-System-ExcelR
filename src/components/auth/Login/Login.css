@@ -1,0 +1,84 @@
+/* Full container styling */
+.login-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Left side (Form) */
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #003366;
+}
+
+/* Form styling */
+/* Form input fields with bottom border only */
+.form-control {
+    border: none;
+    border-bottom: 2px solid #003366; /* Navy blue bottom border */
+    border-radius: 0; /* Remove rounded corners */
+    background-color: transparent; /* Transparent background */
+    box-shadow: none; /* Remove shadow on focus */
+    height: 40px;
+    font-size: 1rem;
+    color: #003366; /* Navy blue text */
+}
+
+.form-control:focus {
+    border-bottom: 2px solid #08004d; /* Green bottom border on focus */
+    outline: none; /* Remove outline */
+    box-shadow: none; /* Ensure no shadow on focus */
+}
+
+/* Placeholder text styling */
+.form-control::placeholder {
+    color: #ccc; /* Light gray for placeholder text */
+    font-style: italic;
+}
+
+/* Label styling */
+.form-label {
+    font-size: 1rem;
+    color: #003366; /* Navy blue label color */
+}
+
+
+/* Button styling */
+.btn-primary {
+    background-color: #0f0054;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #5873cc;
+}
+
+/* Right side (Background Image) */
+.login-right {
+    flex: 1;
+    background: url('./login-bg.jpg') no-repeat center center/cover;
+}

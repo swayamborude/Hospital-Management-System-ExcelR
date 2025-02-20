@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#splash-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 40px;
+    background-color: #01002c; /* Navy blue background */
+    color: white; /* White text for better contrast */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 1s forwards;
+    max-width: 100%;
+}
+
+.logo {
+    width: 400px;
+    height: auto;
+    animation: scaleUp 1s;
+    border-radius: 15%;
+}
+
+.splash-heading {
+    font-size: 2.9rem;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+    font-weight: 900;
+    color: white;
+}
+
+.falling-text {
+    display: inline-block;
+    opacity: 0;
+    animation: fall 1s forwards;
+    margin: 0 10px;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    background-color: #001f3f; /* Navy blue background */
+    color: white; /* White text for better contrast */
+}
+
+
+
+.logo-text1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.logo-name1 {
+    font-size: 23px;
+    font-weight: bolder;
+    color: orange;
+    
+}
+
+.logo-text {
+    padding-top: 5%;
+    font-weight: bold;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+}
+
+.logo-name {
+    font-size: 23px;
+    font-weight: bolder;
+    color: orange;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #001f3f;
+    color: white;
+    border-bottom: 1px solid #dee2e6;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 40px;
+    flex: 1;
+    margin-top: 6%;
+}
+
+.registration-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: white;
+    color: rgb(0, 0, 68);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    text-align: center;
+}
+
+.bannerImage {
+    width: 80%;
+    height: 100%;
+}
